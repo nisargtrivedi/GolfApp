@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/SaveTeam"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/twenty_margin">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/height_20"
+                android:layout_height="@dimen/height_20"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back" />
+
+            <com.app.discovergolf.Component.TTextview
+                android:id="@+id/TeamTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_50"
+                android:layout_marginLeft="@dimen/twenty_margin"
+                android:layout_toRightOf="@id/back"
+                android:gravity="left|center"
+                android:text="Create Your Team"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_sixteen"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMusic"
+                android:layout_marginRight="@dimen/height_20"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/height_20"
+                android:layout_height="@dimen/height_20"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:src="@drawable/music_note"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <com.app.discovergolf.Util.EEditText
+            android:id="@+id/txtTeamName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:background="@color/white"
+            android:hint="Enter Team Name"
+            android:paddingLeft="@dimen/twenty_margin"
+            android:singleLine="true"
+            android:textColor="@color/light_text_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#80A1A1A1"></View>
+
+        <com.app.discovergolf.Util.TTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:gravity="left|center"
+            android:text="Team Players"
+            android:textColor="@color/light_text_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#80A1A1A1"></View>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RvPlayers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/ten_margin">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/SaveTeam"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/height_50"
+        android:layout_below="@id/tiPassword"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/ten_margin"
+        android:background="@drawable/login_btn"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</RelativeLayout>

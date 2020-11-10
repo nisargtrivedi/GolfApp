@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:bvp="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.halilibo.bettervideoplayer.BetterVideoPlayer xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        bvp:bvp_captionSize="20sp"
+        bvp:bvp_captionColor="@android:color/holo_blue_light"
+        android:layout_height="match_parent" />
+</LinearLayout>

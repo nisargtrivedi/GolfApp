@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    app:cardElevation="10dp"
+    android:id="@+id/menu"
+    app:cardBackgroundColor="#F5F4F4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:gravity="center"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_180">
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/five_margin"
+        android:id="@+id/imgMenu"
+        android:src="@drawable/menu_one"
+        android:layout_width="@dimen/height_100"
+        android:layout_height="@dimen/height_100" />
+
+    <TextView
+        android:textSize="@dimen/font_size_twenty"
+        android:layout_marginTop="@dimen/ten_margin"
+        android:id="@+id/MenuName"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/imgMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Live Mission"
+        android:textColor="#202020" />
+</LinearLayout>
+</android.support.v7.widget.CardView>

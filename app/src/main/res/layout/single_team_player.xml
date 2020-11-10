@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/RlPlayerData"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/PlayerImage"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_user_icon"
+                android:layout_width="@dimen/height_60"
+                android:layout_height="@dimen/height_60" />
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/twenty_margin"
+            android:layout_toRightOf="@id/PlayerImage"
+            android:id="@+id/PLayerName"
+            android:layout_centerVertical="true"
+            android:text="John Smith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/PlayerSelection"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/player_selected"
+            android:layout_width="@dimen/height_40"
+            android:layout_height="@dimen/height_40" />
+    </RelativeLayout>
+    <View
+        android:background="#80A1A1A1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.discovergolf.Util.TTextView
+    android:textStyle="bold"
+    android:gravity="center|left"
+    android:paddingRight="@dimen/ten_margin"
+    android:paddingLeft="@dimen/ten_margin"
+    android:singleLine="true"
+    android:textColor="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_50"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/twenty_margin">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/height_20"
+            android:layout_height="@dimen/height_20"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:gravity="left|center"
+            android:text="Live Mission Class"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_sixteen"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:padding="@dimen/ten_margin"
+        android:textColor="@color/white"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        android:background="#2F2E2E"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_60" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50">
+        <TextView
+            android:textSize="@dimen/font_size_sixteen"
+            android:layout_marginLeft="@dimen/ten_margin"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="#080807"
+            android:text="Golf Mission 1"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/font_size_fourteen"
+            android:layout_marginRight="@dimen/ten_margin"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#080807"
+            android:text="11 October 2018"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="#ACACAC"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Title"
+            android:textColor="#080807"
+            android:text="Lorem Ipsum is simply"
+            android:layout_marginRight="@dimen/ten_margin"
+            android:layout_marginLeft="@dimen/ten_margin"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:layout_toLeftOf="@id/videoPlay"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/font_size_thirteen"
+            android:layout_below="@id/Title"
+            android:id="@+id/Description"
+            android:textColor="#080807"
+            android:ellipsize="marquee"
+            android:maxLines="5"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+            android:layout_marginRight="@dimen/ten_margin"
+            android:layout_marginLeft="@dimen/ten_margin"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:layout_toLeftOf="@id/videoPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/videoPlay"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/video_img"
+            android:layout_width="@dimen/height_150"
+            android:layout_height="@dimen/height_120" />
+    </RelativeLayout>
+    <View
+        android:background="#ACACAC"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"></View>
+
+
+
+</LinearLayout>

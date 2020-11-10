@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/ten_margin"
+    android:weightSum="10">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/smal_padding"
+        android:layout_weight="1.5"
+        android:adjustViewBounds="true" />
+
+    <com.app.discovergolf.Component.TTextview
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="7"
+        android:gravity="left"
+        android:padding="@dimen/five_margin"
+        android:text="@string/app_name"
+        android:textSize="@dimen/font_size_nineteen" />
+
+    <TextView
+        android:id="@+id/scores"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.5"
+        android:gravity="right"
+        android:padding="@dimen/five_margin"
+        android:textSize="@dimen/font_size_nineteen" />
+</LinearLayout>

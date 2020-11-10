@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/twenty_margin">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/height_20"
+            android:layout_height="@dimen/height_20"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:gravity="left|center"
+            android:text="Mission HQ"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_sixteen"
+            android:textStyle="bold" />
+    </LinearLayout>
+<RelativeLayout
+    android:layout_below="@id/Header"
+    android:layout_above="@id/calendarView"
+    android:gravity="center"
+    android:background="@drawable/rectangle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:background="@drawable/mission_hq_circle_main"
+        android:layout_width="@dimen/height_200"
+        android:layout_height="@dimen/height_200">
+        <RelativeLayout
+            android:background="@drawable/circle_two"
+            android:gravity="center"
+            android:layout_width="@dimen/height_180"
+            android:layout_height="@dimen/height_180">
+
+            <RelativeLayout
+                android:text="test"
+                android:gravity="center"
+                android:background="@drawable/circle_three"
+                android:layout_width="@dimen/height_80"
+                android:layout_height="@dimen/height_80">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/mission"
+                    android:src="@drawable/mission"
+                    android:layout_width="@dimen/height_50"
+                    android:layout_height="@dimen/height_30" />
+                <com.app.discovergolf.Util.TTextView
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_below="@id/mission"
+                    android:text="50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+    <com.app.discovergolf.Component.CustomCalendarView
+        android:layout_above="@id/llBottomData"
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:calendarBackgroundColor="@android:color/white"
+        app:calendarTitleTextColor="@color/black"
+        app:currentDayOfMonthColor="@android:color/black"
+        app:dayOfMonthTextColor="@color/black"
+        app:dayOfWeekTextColor="@color/black"
+        app:disabledDayBackgroundColor="@android:color/white"
+        app:disabledDayTextColor="@android:color/darker_gray"
+        app:selectedDayBackgroundColor="@android:color/holo_green_dark"
+        app:titleLayoutBackgroundColor="@color/white"
+        app:weekLayoutBackgroundColor="@color/white">
+
+    </com.app.discovergolf.Component.CustomCalendarView>
+    <View
+        android:layout_above="@id/llBottomData"
+        android:background="#D7D7D7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/twenty_margin"
+        android:layout_marginLeft="@dimen/twenty_margin"
+        android:background="@color/white"
+        android:id="@+id/llBottomData"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <com.app.discovergolf.Util.TTextView
+            android:text="Live"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/font_size_sixteen"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ten_margin"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black"
+            android:textStyle="normal"/>
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/centerImg"
+            android:layout_gravity="center"
+            android:background="@drawable/half"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+        <View
+            android:id="@+id/centerImg"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/five_margin"
+            android:layout_gravity="center"
+            android:background="#D7D7D7"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+        <com.app.discovergolf.Util.TTextView
+            android:layout_toRightOf="@id/centerImg"
+            android:text="M.O.D"
+            android:textSize="@dimen/font_size_sixteen"
+            android:layout_marginLeft="@dimen/ten_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ten_margin"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black"
+            android:textStyle="normal"/>
+        <ImageView
+            android:id="@+id/modimg"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:background="@drawable/full_ic"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

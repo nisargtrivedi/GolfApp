@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_Item_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--ADD MENU ITEM HERE-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/height_50"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/UserImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+
+        <com.app.discovergolf.Util.TTextView
+            android:id="@+id/UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/UserImage"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <com.app.discovergolf.Util.TTextView
+            android:id="@+id/Country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UserName"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/UserImage"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/light_white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Home"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/twenty_margin"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="@dimen/twenty_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_selected" />
+
+        <com.app.discovergolf.Util.TTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:text="Home"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LiveMission"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/twenty_margin"
+        android:layout_marginRight="@dimen/twenty_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:adjustViewBounds="true"
+            android:padding="6dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/team_selected" />
+
+        <com.app.discovergolf.Util.TTextView
+            android:id="@+id/tvMission"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Live Mission"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MOD"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/twenty_margin"
+        android:layout_marginRight="@dimen/twenty_margin"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_mod"
+            android:padding="6dp"
+            android:scaleType="fitXY" />
+
+        <com.app.discovergolf.Util.TTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:text="M.O.D"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MISSIONHQ"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/twenty_margin"
+        android:layout_marginRight="@dimen/twenty_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/mission_hq_selected"
+            android:scaleType="fitXY" />
+
+        <com.app.discovergolf.Util.TTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:text="Mission HQ"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Messages"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/twenty_margin"
+        android:layout_marginRight="@dimen/twenty_margin"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@drawable/message_selected"
+            android:scaleType="fitXY" />
+
+        <com.app.discovergolf.Util.TTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:text="Messages"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SETTINGS"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/twenty_margin"
+        android:layout_marginRight="@dimen/twenty_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/setting_selected"
+            android:scaleType="fitXY" />
+
+        <com.app.discovergolf.Util.TTextView
+            android:id="@+id/txtSettings"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:text="Change Password"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LOGOUT"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/twenty_margin"
+        android:layout_marginRight="@dimen/twenty_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_logout" />
+
+        <com.app.discovergolf.Util.TTextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:text="Logout"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+</LinearLayout>

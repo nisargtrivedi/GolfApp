@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.LiveFragment">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    android:weightSum="5">
+    <com.app.discovergolf.Util.TTextView
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:text=""
+        android:id="@+id/team_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_sixteen"
+        android:padding="@dimen/font_size_fourteen"
+        android:layout_height="match_parent" />
+    <com.app.discovergolf.Util.TTextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:text=""
+        android:id="@+id/score"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_sixteen"
+        android:padding="@dimen/font_size_fourteen"
+        android:layout_height="match_parent" />
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray11"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv"/>
+</LinearLayout>
+</LinearLayout>

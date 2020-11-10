@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/twenty_margin">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/height_20"
+            android:layout_height="@dimen/height_20"
+            android:src="@drawable/ic_back" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.app.discovergolf.Util.TTextView
+                android:id="@+id/TeamName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_50"
+                android:paddingLeft="@dimen/ten_margin"
+                android:gravity="left|center"
+                android:text="Sunrise Golf Team"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_sixteen"
+                android:textStyle="bold" />
+
+            <com.app.discovergolf.Util.TTextView
+                android:id="@+id/btn_add_point"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_40"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/twenty_margin"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_point"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Add point"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_sixteen"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/height_10"
+        android:id="@+id/RvTeamsMatrix"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

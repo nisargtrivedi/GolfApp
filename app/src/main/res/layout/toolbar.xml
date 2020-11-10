@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:background="@drawable/rectangle"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:minHeight="50dp">
+            <com.app.discovergolf.Util.TTextView
+                android:textStyle="bold"
+                android:id="@+id/Back"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_30"
+                android:gravity="left|center"
+                android:text="Home"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/img_Chat"
+            android:layout_marginRight="@dimen/ten_margin"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_chat"
+            android:layout_width="@dimen/height_20"
+            android:layout_height="20dp" />
+
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>

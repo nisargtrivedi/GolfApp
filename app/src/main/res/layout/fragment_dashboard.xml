@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/RvMenu"
+        android:background="@drawable/dashboard_back"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="-10dp"
+            android:background="@drawable/ic_level"
+            android:gravity="center"
+            android:text="20"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_fourteen"
+            android:translationZ="10dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/UserImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_user"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/UserImage"
+            android:gravity="center"
+            android:text="John"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_sixteen"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UserName"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/UserImage"
+            android:gravity="center"
+            android:text="NewYork"
+            android:textColor="@color/light_white"
+            android:textSize="@dimen/font_size_fourteen" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RvMenu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100"
+        android:layout_above="@id/grid_dashboard"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/twenty_margin"
+        android:paddingRight="@dimen/twenty_margin" />
+
+    <GridView
+        android:id="@+id/grid_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:visibility="invisible"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/RvMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/menu"
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/height_10"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            app:cardBackgroundColor="#F5F4F4"
+            app:cardElevation="10dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/live"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_180"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgMenu"
+                    android:layout_width="@dimen/height_100"
+                    android:layout_height="@dimen/height_100"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/five_margin"
+                    android:src="@drawable/menu_one" />
+
+                <TextView
+                    android:id="@+id/MenuName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgMenu"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/ten_margin"
+                    android:gravity="center"
+                    android:text="Live Mission"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/font_size_twenty" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/height_10"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            app:cardBackgroundColor="#F5F4F4"
+            app:cardElevation="10dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_180"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:id="@+id/mod"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/height_100"
+                        android:layout_height="@dimen/height_100"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/fil_green" />
+
+                    <TextView
+                        android:drawableTop="@drawable/ic_watch"
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="time"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/font_size_fiften" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/height_100"
+                    android:layout_height="@dimen/height_100"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/five_margin"
+                    android:src="@drawable/fil_green"
+                    android:visibility="gone" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgMenu"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/ten_margin"
+                    android:gravity="center"
+                    android:text="M.O.D"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/font_size_twenty" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>

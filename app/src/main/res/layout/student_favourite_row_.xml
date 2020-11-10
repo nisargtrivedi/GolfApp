@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white"
+    android:padding="@dimen/height_5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<ImageView
+    android:elevation="@dimen/height_10"
+    android:scaleType="fitXY"
+    android:id="@+id/StudentImage"
+    android:layout_gravity="center"
+    android:layout_width="@dimen/height_60"
+    android:layout_height="@dimen/height_60" />
+
+    <com.app.discovergolf.Component.TTextview
+        android:text="test"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/StudentName"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

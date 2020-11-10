@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.discovergolf">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name=".Networks.ServerUtility"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity_">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.BaseActivity_" />
+        <activity android:name=".Activity.Login_"></activity>
+        <activity
+            android:name=".Activity.ForgotPassword_"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleDialog" />
+        <activity
+            android:name=".Activity.Dashboard_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LiveMission_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.TeamDetailScore_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.TeamPlayer_"
+            android:theme="@style/NoTitleDialog" />
+        <activity
+            android:name=".Activity.MOD_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Message_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ChatMessage_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CreateTeam_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MODClass_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Score_"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleDialog" />
+        <activity
+            android:name=".Activity.ChangePassword_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MissionHQ_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActGroup_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Coach.Activity.CoachDashboard_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Coach.Activity.CoachCreateTeam_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Coach.Activity.CoachUpdateTeam_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Coach.Activity.MissionList_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Coach.Activity.TeamList_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Coach.Activity.TeamScore_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Coach.Activity.StudentScorePopUp_"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleDialog" />
+        <activity
+            android:name=".Activity.Coach.Activity.AddStudentScore_"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleDialog" />
+        <activity
+            android:name=".Activity.LiveMissionClassView_"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.AppWebView" />
+        <activity
+            android:name=".Activity.student.Activity.ModTeamScore_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.student.Activity.AddModStudentScore_"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleDialog" />
+        <activity
+            android:name=".Activity.student.Activity.StudentCreateTeam_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.student.Activity.MODActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.student.Activity.VideoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+            android:label="" />
+        <activity android:name=".Activity.DateScoreActivity"></activity>
+        <activity android:name=".Activity.ScorePopup_"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="8db720261e8d222976aa0bc8b39518b07d210fa7" />
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+    </application>
+
+</manifest>

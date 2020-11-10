@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/RlStudent"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/StudentImage"
+            android:layout_width="@dimen/height_60"
+            android:layout_height="@dimen/height_60"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ten_margin"
+            android:elevation="@dimen/height_10"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/ten_margin"
+            android:layout_toLeftOf="@id/FavouriteImage"
+            android:layout_toRightOf="@id/StudentImage"
+            android:orientation="vertical">
+
+            <com.app.discovergolf.Util.TTextView
+                android:id="@+id/StudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14.5sp"
+                android:textStyle="bold" />
+
+            <com.app.discovergolf.Util.TTextView
+                android:id="@+id/StudentCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_5"
+                android:text=""
+                android:textColor="#80000000"
+                android:textSize="12.5sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/FavouriteImage"
+            android:layout_width="@dimen/height_20"
+            android:layout_height="@dimen/height_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/ten_margin"
+            android:src="@drawable/ic_favourites" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/RlStudent"
+        android:background="#1A000000"></View>
+</RelativeLayout>

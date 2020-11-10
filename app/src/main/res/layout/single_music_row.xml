@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/menu"
+    android:background="@color/white"
+    android:padding="@dimen/height_10"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="@dimen/height_100">
+
+    <ImageView
+        android:background="#E9E9E9"
+        android:scaleType="center"
+        android:layout_marginTop="@dimen/five_margin"
+        android:id="@+id/imgMenu"
+        android:src="@drawable/music_play"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <com.app.discovergolf.Util.TTextView
+        android:id="@+id/Name"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_below="@id/imgMenu"
+        android:layout_width="@dimen/height_50"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text=""
+        android:textColor="#202020" />
+</RelativeLayout>

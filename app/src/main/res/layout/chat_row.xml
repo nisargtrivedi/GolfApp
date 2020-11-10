@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="@dimen/height_10"
+    android:id="@+id/ll"
+    android:layout_below="@id/Header"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_marginTop="@dimen/ten_margin"
+        android:gravity="center"
+        android:textColor="#99080807"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/rldata"
+        android:layout_marginRight="@dimen/height_10"
+        android:layout_marginTop="@dimen/height_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/user2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_user_icon"
+            android:layout_width="@dimen/height_40"
+            android:layout_height="@dimen/height_40" />
+
+        <com.app.discovergolf.Util.TTextView
+            android:ems="17"
+            android:paddingLeft="@dimen/height_10"
+            android:ellipsize="marquee"
+            android:text="asdsadasdasdas"
+            android:textColor="@color/white"
+            android:id="@+id/tvRight"
+            android:gravity="center|left"
+            android:minHeight="@dimen/height_50"
+            android:layout_toLeftOf="@id/user2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

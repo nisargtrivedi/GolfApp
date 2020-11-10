@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RlData"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/three_margin"
+        android:layout_marginTop="@dimen/ten_margin"
+        android:layout_marginRight="@dimen/three_margin">
+
+        <com.app.discovergolf.Util.TTextView
+            android:textStyle="bold"
+            android:id="@+id/MatrixTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dp"
+            android:text="50 Birdie(s)"
+            android:textColor="#080807"
+            android:textSize="@dimen/font_size_sixteen" />
+
+        <com.app.discovergolf.Util.TTextView
+            android:textAllCaps="true"
+            android:id="@+id/MatrixComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/height_30"
+            android:text="3/10 COMPLETED"
+            android:textColor="#757575"
+            android:textSize="@dimen/font_size_thirteen" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twenty_margin"
+        android:layout_marginRight="@dimen/ten_margin">
+
+        <ImageView
+            android:translationZ="10dp"
+            android:id="@+id/MatrixImage"
+            android:layout_width="@dimen/height_40"
+            android:layout_height="@dimen/height_40"
+            android:src="@drawable/team_property_icon" />
+
+        <ProgressBar
+            android:layout_marginLeft="-5dp"
+            style="@style/CustomProgressBarHorizontal"
+            android:id="@+id/roundProgress"
+            android:progressDrawable="@drawable/score_color"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/MatrixImage"
+            android:progress="20"
+            android:max="100"
+            android:progressTint="#ff2B8F44" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40"
+        android:layout_marginLeft="@dimen/height_60"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/StudentOne"
+            android:layout_width="@dimen/height_30"
+            android:layout_height="@dimen/height_30"
+            android:layout_below="@id/roundProgress" />
+
+        <ImageView
+            android:id="@+id/StudentTwo"
+            android:layout_width="@dimen/height_30"
+            android:layout_height="@dimen/height_30"
+            android:layout_below="@id/roundProgress"
+            android:layout_marginLeft="@dimen/ten_margin" />
+
+        <ImageView
+            android:id="@+id/StudentThree"
+            android:layout_width="@dimen/height_30"
+            android:layout_height="@dimen/height_30"
+            android:layout_below="@id/roundProgress"
+            android:layout_marginLeft="@dimen/ten_margin" />
+
+        <ImageView
+            android:id="@+id/StudentFour"
+            android:layout_width="@dimen/height_30"
+            android:layout_height="@dimen/height_30"
+            android:layout_below="@id/roundProgress"
+            android:layout_marginLeft="@dimen/ten_margin" />
+        <TextView
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/circle_score"
+            android:id="@+id/StudentFive"
+            android:layout_width="@dimen/height_30"
+            android:layout_height="@dimen/height_30"
+            android:layout_below="@id/roundProgress"
+            android:layout_marginLeft="@dimen/ten_margin" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D5D5D5"></View>
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.student.Activity.MODActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        android:minHeight="50dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/height_20"
+            android:layout_height="@dimen/height_20"
+            android:src="@drawable/ic_back" />
+
+        <com.app.discovergolf.Util.TTextView
+            android:id="@+id/Back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_30"
+            android:gravity="left|center"
+            android:text="MOD"
+            android:layout_marginLeft="40dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_mission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mission_bg">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:elevation="10dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp">
+
+                <com.app.discovergolf.Util.TTextView
+                    android:id="@+id/txt_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:padding="10dp"
+                    android:text="" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.app.discovergolf.Util.TTextView
+                android:textStyle="normal"
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:padding="10dp"
+                android:text="Title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+
+            <com.app.discovergolf.Util.TTextView
+                android:textStyle="normal"
+                android:id="@+id/txt_schedule_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:text="Scheduled" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt_title"
+                android:background="@color/Login_Page_Tab_Border"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <com.app.discovergolf.Util.TTextView
+                        android:id="@+id/txt_vid_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="4"
+                        android:minLines="4"
+                        android:padding="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_player"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_100"
+                    android:layout_weight="2"
+                    android:background="@color/black">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_play" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_video"
+                android:background="@color/Login_Page_Tab_Border"></View>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_mission"
+        android:layout_marginTop="@dimen/height_20">
+
+        <com.app.discovergolf.Util.TTextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Team Name"
+            android:textColor="@color/black" />
+
+        <com.app.discovergolf.Util.TTextView
+            android:textStyle="bold"
+            android:id="@+id/txt_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:padding="10dp"
+            android:text="Score"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txt_score"
+            android:background="@color/Login_Page_Tab_Border"></View>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_score"
+            android:clipToPadding="false"
+            android:padding="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <com.app.discovergolf.Util.TTextView
+        android:id="@+id/btnCreateTeam"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/height_50"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/twenty_margin"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:text="Create Team"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</RelativeLayout>

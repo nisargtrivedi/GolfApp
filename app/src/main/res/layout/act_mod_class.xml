@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/twenty_margin">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/height_20"
+            android:layout_height="@dimen/height_20"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:gravity="left|center"
+            android:text="M.O.D"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_sixteen"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/headerContent"
+        android:background="#F0E8E8"
+        android:layout_below="@id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="@dimen/twenty_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_80">
+            <TextView
+                android:textColor="#080807"
+                android:text="Lorem Ipsum is simply dummy text of the printing
+and typesetting industry. Lorem Ipsum is simply
+dummy text of the printing"
+                android:layout_margin="@dimen/ten_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/headerContent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50">
+            <TextView
+                android:textSize="@dimen/font_size_sixteen"
+                android:layout_marginLeft="@dimen/ten_margin"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="#080807"
+                android:text="Golf Mission 1"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/font_size_fourteen"
+                android:layout_marginRight="@dimen/ten_margin"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:textColor="#080807"
+                android:text="11 October 2018"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="#ACACAC"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/Title"
+                android:textColor="#080807"
+                android:text="Lorem Ipsum is simply"
+                android:layout_marginRight="@dimen/ten_margin"
+                android:layout_marginLeft="@dimen/ten_margin"
+                android:layout_marginTop="@dimen/ten_margin"
+                android:layout_toLeftOf="@id/videoPlay"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/font_size_thirteen"
+                android:layout_below="@id/Title"
+                android:id="@+id/Description"
+                android:textColor="#080807"
+                android:ellipsize="marquee"
+                android:maxLines="5"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                android:layout_marginRight="@dimen/ten_margin"
+                android:layout_marginLeft="@dimen/ten_margin"
+                android:layout_marginTop="@dimen/ten_margin"
+                android:layout_toLeftOf="@id/videoPlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/videoPlay"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/video_img"
+                android:layout_width="@dimen/height_150"
+                android:layout_height="@dimen/height_120" />
+        </RelativeLayout>
+        <View
+            android:background="#ACACAC"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"></View>
+    <LinearLayout
+        android:layout_marginTop="@dimen/ten_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnAddPoint"
+            android:layout_marginRight="@dimen/ten_margin"
+            android:layout_marginLeft="@dimen/ten_margin"
+            android:layout_marginBottom="@dimen/ten_margin"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/tiPassword"
+            android:text="Add Point"
+            android:layout_weight="1"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/EditTeam"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/ten_margin"
+            android:layout_marginLeft="@dimen/ten_margin"
+            android:layout_marginBottom="@dimen/ten_margin"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/tiPassword"
+            android:text="Edit Team"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50" />
+    </LinearLayout>
+        <ScrollView
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/height_50">
+               <TextView
+                   android:textSize="@dimen/font_size_sixteen"
+                   android:layout_marginLeft="@dimen/ten_margin"
+                   android:layout_centerInParent="true"
+                   android:layout_alignParentLeft="true"
+                   android:textColor="#080807"
+                   android:text="Class"
+                   android:singleLine="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:textSize="@dimen/font_size_fourteen"
+                   android:layout_marginRight="@dimen/ten_margin"
+                   android:layout_centerInParent="true"
+                   android:layout_alignParentRight="true"
+                   android:textColor="#080807"
+                   android:text="Global"
+                   android:singleLine="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+           </RelativeLayout>
+           <View
+               android:background="#ACACAC"
+               android:layout_width="wrap_content"
+               android:layout_height="1dp"></View>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/height_40">
+               <TextView
+                   android:textSize="@dimen/font_size_fiften"
+                   android:id="@+id/TeamName"
+                   android:textColor="#080807"
+                   android:text="Team Name"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginRight="@dimen/ten_margin"
+                   android:layout_marginLeft="@dimen/ten_margin"
+                   android:layout_marginTop="@dimen/ten_margin"
+                   android:layout_width="wrap_content"
+                   android:singleLine="true"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:textSize="@dimen/font_size_fiften"
+                   android:id="@+id/Score"
+                   android:textColor="#080807"
+                   android:text="Score"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="@dimen/ten_margin"
+                   android:layout_marginLeft="@dimen/ten_margin"
+                   android:layout_marginTop="@dimen/ten_margin"
+                   android:layout_width="wrap_content"
+                   android:singleLine="true"
+                   android:layout_height="wrap_content" />
+           </RelativeLayout>
+           <View
+               android:background="#ACACAC"
+               android:layout_width="wrap_content"
+               android:layout_height="1dp"></View>
+           <RelativeLayout
+               android:id="@+id/teamSelect"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/height_40">
+               <TextView
+                   android:textSize="@dimen/font_size_fiften"
+                   android:textColor="#080807"
+                   android:text="Sunrise golf team"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginRight="@dimen/ten_margin"
+                   android:layout_marginLeft="@dimen/ten_margin"
+                   android:layout_width="wrap_content"
+                   android:singleLine="true"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:textSize="@dimen/font_size_fiften"
+                   android:textColor="#080807"
+                   android:text="50"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="@dimen/ten_margin"
+                   android:layout_marginLeft="@dimen/ten_margin"
+                   android:layout_width="wrap_content"
+                   android:singleLine="true"
+                   android:layout_height="wrap_content" />
+           </RelativeLayout>
+           <View
+               android:background="#ACACAC"
+               android:layout_width="wrap_content"
+               android:layout_height="1dp"></View>
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/height_40">
+               <TextView
+                   android:textSize="@dimen/font_size_fiften"
+                   android:textColor="#080807"
+                   android:text="Sunrise golf team"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginRight="@dimen/ten_margin"
+                   android:layout_marginLeft="@dimen/ten_margin"
+                   android:layout_width="wrap_content"
+                   android:singleLine="true"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:textSize="@dimen/font_size_fiften"
+                   android:textColor="#080807"
+                   android:text="50"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="@dimen/ten_margin"
+                   android:layout_marginLeft="@dimen/ten_margin"
+                   android:layout_width="wrap_content"
+                   android:singleLine="true"
+                   android:layout_height="wrap_content" />
+           </RelativeLayout>
+
+       </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

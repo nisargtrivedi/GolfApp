@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llUper"
+        android:padding="@dimen/ten_margin"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_marginTop="@dimen/ten_margin"
+            android:id="@+id/ddClass"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/ddclass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_marginTop="@dimen/ten_margin"
+            android:id="@+id/ddMission"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/ddmission"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_above="@id/btnCreateTeam"
+        android:layout_below="@id/llUper"
+        android:id="@+id/line1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="#80A1A1A1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+        <com.app.discovergolf.Util.TTextView
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/light_text_color"
+            android:text="Teams"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:gravity="left|center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50" />
+        <View
+            android:background="#80A1A1A1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RvTeams"
+            android:layout_below="@id/line1"
+            android:layout_margin="@dimen/ten_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ImgNoData"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_nodata"
+        android:layout_width="@dimen/height_100"
+        android:layout_height="100dp" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvNoTeam"
+        android:textSize="@dimen/font_size_sixteen"
+        android:layout_marginTop="@dimen/ten_margin"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@id/ImgNoData"
+        android:text="No Teams Available"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.app.discovergolf.Util.TTextView
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/twenty_margin"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:id="@+id/btnCreateTeam"
+        android:layout_below="@id/tiPassword"
+        android:text="Create Team"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/login_btn"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/height_50" />
+
+</RelativeLayout>

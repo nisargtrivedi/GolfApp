@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/twenty_margin">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/height_20"
+            android:layout_height="@dimen/height_20"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:layout_marginLeft="@dimen/ten_margin"
+            android:id="@+id/user3"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_user_icon"
+            android:layout_width="@dimen/height_40"
+            android:layout_height="@dimen/height_40" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:gravity="left|center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_sixteen"
+            android:textStyle="bold" />
+    </LinearLayout>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rvChat"
+    android:layout_below="@id/Header"
+    android:layout_above="@id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</android.support.v7.widget.RecyclerView>
+<RelativeLayout
+    android:id="@+id/footer"
+    android:layout_alignParentBottom="true"
+    android:background="#EBEBEB"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_50">
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_toLeftOf="@id/btnSend"
+        android:singleLine="true"
+        android:id="@+id/edtChat"
+        android:paddingLeft="@dimen/height_10"
+        android:hint="type your message here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:text="Send"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/login_btn_send"
+        android:layout_height="40dp" />
+<ImageView
+    android:visibility="invisible"
+    android:paddingLeft="@dimen/ten_margin"
+    android:layout_centerVertical="true"
+    android:src="@drawable/camera"
+    android:layout_width="@dimen/height_50"
+    android:layout_height="@dimen/height_50" />
+</RelativeLayout>
+</RelativeLayout>

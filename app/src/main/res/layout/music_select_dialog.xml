@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="@dimen/ten_margin"
+        android:id="@+id/RvMusic"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+    </android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/DoneMusic"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/height_50"
+        android:layout_below="@id/tiPassword"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/ten_margin"
+        android:background="@drawable/login_btn"
+        android:text="Done"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</LinearLayout>
